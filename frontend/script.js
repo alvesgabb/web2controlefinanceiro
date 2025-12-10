@@ -25,7 +25,7 @@ const dataa = await resposta.json()
 console.log(dataa)
 
 document.getElementById("descricao").value=""
-document.getElementById("select").value="entrada"
+document.getElementById("select").value=""
 document.getElementById("data").value=""
 document.getElementById("valor").value=""
 listarLancamentos()
@@ -94,3 +94,7 @@ async function mostrarSaldo() {
   document.getElementById("saldo").innerText=`R$ ${dados.saldo}`
   
 }
+
+mostrarSaldo()
+listarLancamentos()
+
